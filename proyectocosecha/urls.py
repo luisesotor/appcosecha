@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from appcosecha.views import inicio
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', inicio),
     path('appcosecha/', include('appcosecha.urls'))
+
 ]

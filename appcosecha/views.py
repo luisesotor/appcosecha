@@ -12,11 +12,16 @@ def frutos (request):
     return render(request, "appcosecha/frutos.html")
 
 
-def frutas(request):
+def nosotros(request):
 
-    return render(request, "appcosecha/frutas.html")
+    return render(request, "appcosecha/nosotros.html")
 
 
 def mix(request):
 
     return render(request, "appcosecha/mix.html")
+
+
+def listadeprecios(request):
+
+    return render(request, "appcosecha/listadeprecios.html")

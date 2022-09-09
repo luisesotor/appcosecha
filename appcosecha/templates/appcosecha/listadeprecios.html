@@ -6,17 +6,13 @@
 
 {% block contenidoquecambia2 %}
  
-<ul>
-   <li>Mix 4 Mani</li>
-   <li>Mix 4 Pasas</li>
-   <li>Mix 5</li>
-   <li>Mix Otoño</li>
-   <li>Mix Criollo</li>
-   <li>Mix Egipcio</li>
-   <li>Mix Salado</li>
-   
-
-</ul>
+{% for producto in productos %}
+   <!-- Product name-->
+   <h5 class="fw-bolder">{{producto.nombre}}</h5>
+   <!-- Product price-->
+   <h6>{{producto.precio}}</h6>
+                        
+{% endfor %}
 
 
 {% endblock %}

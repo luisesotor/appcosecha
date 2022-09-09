@@ -1,6 +1,10 @@
 {% extends "appcosecha/padre.html " %}
 {% load static %}
-{% block contenidoquecambia %}
+{% block titulopagina %}
+Aqui puedes dejar alguna sugerencia o recomendacion de algun mix nuevo!!!
+{% endblock %}
+
+{% block contenidoprincipal %}
 {% if miformulario.errors %}
 
 <p style="color:blue"> Estan mal los datos, revisar</p>

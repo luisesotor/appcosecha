@@ -1,0 +1,25 @@
+{% extends "appcosecha/padre.html " %}
+{% load static %}
+{% block titulopagina %}
+Aqui puedes crear nuevos productos en la BD!!!
+{% endblock %}
+
+{% block contenidoprincipal %}
+{% if formularioproducto.errors %}
+
+<p style="color:blue"> Estan mal los datos, revisar</p>
+
+{% endif %}
+<form action="crearproducto/" method="POST"> {% csrf_token %}
+
+   <table>
+
+      {{ formularioproducto.as_table }}
+
+   </table>
+
+   <input type="submit" name="Enviar" id="">
+
+</form>
+
+{% endblock %}

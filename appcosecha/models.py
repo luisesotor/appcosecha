@@ -9,10 +9,10 @@ class Producto(models.Model):
     descripcion= models.TextField(default="sin descripcion")
 
 class Proveedor(models.Model):
-    origen=models.CharField(max_length=20)
-    proveedor= models.CharField(max_length=20)
+    empresa=models.CharField(max_length=20)
+    productos = models.TextField()
 
 class Sugerencia(models.Model):
     nombre=models.CharField(max_length=20)
-    sugerencia=models.CharField(max_length=300)
+    sugerencia=models.TextField()
     
